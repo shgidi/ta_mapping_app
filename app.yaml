@@ -1,0 +1,10 @@
+runtime: custom
+api_version: 1
+threadsafe: true
+env: flex
+
+handlers:
+- url: /static
+  static_dir: static
+- url: /.*
+  script: main.app

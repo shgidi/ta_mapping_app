@@ -1,0 +1,64 @@
+
+<script src="static/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript"></script> 
+
+
+<head>
+	<title>TA Artists</title>
+	<meta http-Equiv="Cache-Control" Content="no-cache" />
+    <meta http-Equiv="Pragma" Content="no-cache" />
+    <meta http-Equiv="Expires" Content="0" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--===============================================================================================-->
+	<!--===============================================================================================-->
+		<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="static/vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" hrexf="static/vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="static/vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="static/css/util.css">
+		<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<!--===============================================================================================-->
+</head>
+<body>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<h1>Tel Aviv Artists</h1><br>
+			<img src="static/images/plaque.png"></img>
+			<br>
+			This is Tel Aviv srtists app.<br><br>
+			You can see on the map all Tel Aviv artists houses with memory plaques.<br><br>
+			Insert your starting address, and time you'd like to spend, and watch your round trip route!<br><br> 
+			Zoom in and click the markers to read about the artists.<br><br> 
+			You can read more about it  <a href=https://medium.com/@gidishperber/project-mapping-tel-aviv-artists-residence-218c21428915>here</a><br><br> 
+			<!--<a href="" id="down">down</a><br>-->
+			<!--<a href="" id="up">up</a>-->
+			<form name="myForm" onsubmit="return addressSearch()" method="post" action="/">
+			  Adress: <input type="text" name="address">
+			  <br><br> 
+		      Hours: [1-5]:<input id="time" type="number" name="time" min="1" max="5" value=1></input>
+			  <input type="submit" value="Submit">
+			  <p id="demo"></p>
+			  <br>
+			</form>
+
+			<div>
+				<iframe  width="1000" height="500" id="map" srcdoc='{{map}}' scrolling="no" ></iframe>
+			</div>
+			This is a demo app<br><br> 
+		</div>
+	</div>
+<body>
