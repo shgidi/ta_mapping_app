@@ -1,21 +1,14 @@
-# ta_art
+# TA artists mapping app
 
-## Flow:
-1. data cleaning (notebook)
-2. data enrichment (notebook
-3. map creation (notebook)
-4. deployment
+[blogpost]
+[app](https://compute-5-6-18.appspot.com/)
 
-## To run:
 
-uvicorn app:
-python server.py serve
+## To run locally:
 
-flask app:
-flask run --host='0.0.0.0'
+python app/app.py serve
 
-## TODO [flask]:
-1. reset map on start app
-2. allow english
-3. Add pop up ,essage on findings
-4. Give better instructions
+## to deploy:
+
+gcloud app deploy
+
